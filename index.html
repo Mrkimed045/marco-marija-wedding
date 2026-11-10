@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitalni Poziv na Vjenčanje</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="section-image">
+    <div class="inner-background">
+    </div>
+  </section>
+
+  <section class="section-second">
+    <div class="container py-5">
+      <div id="countdown" class="text-center mb-5">
+        <h3 class="countdown-title"> - Odbrojavanje do vjenčanja - </h3>
+        <h1 class="mb-5">22. svibnja 2027.</h1>
+        <div class="countdown-timer">
+          <div class="countdown-item">
+            <span id="days" class="countdown-number">00</span>
+            <span class="countdown-label">Dana</span>
+          </div>
+          <div class="countdown-item">
+            <span id="hours" class="countdown-number">00</span>
+            <span class="countdown-label">Sati</span>
+          </div>
+          <div class="countdown-item">
+            <span id="minutes" class="countdown-number">00</span>
+            <span class="countdown-label">Minuta</span>
+          </div>
+          <div class="countdown-item">
+            <span id="seconds" class="countdown-number">00</span>
+            <span class="countdown-label">Sekundi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar-section text-center mb-5">
+        <h4 class="mb-4">Dodaj u svoj kalendar</h4>
+        <div class="calendar-buttons">
+          <button class="btn btn-outline-dark me-2 mb-2" onclick="addToGoogleCalendar()">
+            <i class="fab fa-google"></i> Google Calendar
+          </button>
+          <button class="btn btn-outline-dark me-2 mb-2" onclick="addToOutlook()">
+            <i class="fab fa-microsoft"></i> Outlook
+          </button>
+          <button class="btn btn-outline-dark mb-2" onclick="downloadICS()">
+            <i class="fas fa-download"></i> Preuzmi (.ics)
+          </button>
+        </div>
+      </div>
+
+      <div class="image-slider mb-5">
+        <div class="image-container">
+          <img src="img/image_1_bw.jpg" alt="Image 1" class="slider-image active" />
+          <img src="img/image_2_bw.jpg" alt="Image 2" class="slider-image" />
+          <img src="img/image_3_bw.jpg" alt="Image 3" class="slider-image" />
+          <img src="img/image_4_bw.jpg" alt="Image 4" class="slider-image" />
+          <img src="img/image_5_bw.jpg" alt="Image 5" class="slider-image" />
+          <img src="img/image_6_bw.jpg" alt="Image 6" class="slider-image" />
+        </div>
+        <div class="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+          <span class="dot" data-index="5"></span>
+        </div>
+      </div>
+
+
+      <div class="row text-center mb-4">
+        <h3>- Detalji dana -</h3>
+        <p class="information-text">Vjenčanje će se održati 22. svibnja 2027. godine u crkvi Uznesenja Blažene Djevice Marije u Crikvenici. 
+          Okupljanje gostiju ispred crkve počinje u 15:30 sati. Obred vjenčanja počinje u 16:30 sati.</p>
+      </div>
+
+      <div class="row mb-4">
+        <div class="image-container">
+          <img src="img/crkva_3.jpg" alt="Wedding Image 1" class="row-image" />
+        </div>
+      </div>
+
+      <div class="row mb-5 calendar-section align-items-center">
+        <div class="col-lg-6 my-4 text-center">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon bg-white border border-dark">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="text-start">
+                <h6>15:30</h6>
+                <p>Okupljanje ispred crkve</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon bg-white border border-dark">
+                <i class="fas fa-church"></i>
+              </div>
+              <div class="text-start">
+                <h6>16:30</h6>
+                <p>Sveta misa (Vjenčanje)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 my-4">
+          <div>
+            <h5>Crkva Uznesenja Blažene Djevice Marije (Crikvenica)</h5>
+            <div class="map-container mb-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d14.694072!3d45.1716022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47637b835b39013d%3A0x64e3b8a7217ce037!2sCrkva%20Uznesenja%20Blažene%20Djevice%20Marije!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus&style=element:geometry%7Ccolor:0x1a1a1a&style=element:labels.text.fill%7Ccolor:0xcccccc&style=element:labels.text.stroke%7Ccolor:0x1a1a1a&style=feature:administrative%7Celement:geometry%7Ccolor:0x333333&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xaaaaaa&style=feature:road%7Celement:geometry%7Ccolor:0x2d2d2d&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8d8d8d&style=feature:water%7Celement:geometry%7Ccolor:0x0a0a0a"
+                width="100%"
+                height="200"
+                style="border:0; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);"
+                allowfullscreen=""
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center mb-4">
+        <p class="information-text">Nakon vjenčanja u crkvi i kratkog slikanja sa bližnjima, gosti će se uputiti u hotel Omorika 
+          na domijenak, dok čekaju mladence koji će se u to vrijeme slikati. Oko 19:00 / 19:30 gosti će se uputiti u svečanu salu 
+          te zauzeti svoja mjesta.</p>
+      </div>
+
+      <div class="row mb-4">
+        <div class="image-container">
+          <img src="img/omorika_1.jpg" alt="Wedding Image 1" class="row-image" />
+        </div>
+      </div>
+
+      <div class="row mb-5 calendar-section align-items-center">
+        <div class="col-lg-6 my-4 text-center">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon bg-white border border-dark">
+                <i class="fas fa-champagne-glasses"></i>
+              </div>
+              <div class="text-start">
+                <h6>17:30</h6>
+                <p>Domijenak na terasi hotela Omorika</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon bg-white border border-dark">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="text-start">
+                <h6>19:30</h6>
+                <p>Svečana večera i zabava u sali hotela Omorika</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 my-4">
+          <div>
+            <h5>Hotel Omorika (Crikvenica)</h5>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d14.675429!3d45.18848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47637cb082e99159%3A0x5d20b91001a11615!2sHotel%20Omorika%20%2F%20Pavilion%20Omorika!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus&style=element:geometry%7Ccolor:0x1a1a1a&style=element:labels.text.fill%7Ccolor:0xcccccc&style=element:labels.text.stroke%7Ccolor:0x1a1a1a&style=feature:administrative%7Celement:geometry%7Ccolor:0x333333&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xaaaaaa&style=feature:road%7Celement:geometry%7Ccolor:0x2d2d2d&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8d8d8d&style=feature:water%7Celement:geometry%7Ccolor:0x0a0a0a"
+                width="100%"
+                height="200"
+                style="border:0; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);"
+                allowfullscreen=""
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
